@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "banner banner aside"
+      "card card aside"
+      "footer footer footer";
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  header {
+    grid-area: header;
+    background-color: #ff8484;
+    color: white;
+    padding: 20px;
+    
+  }
+  
+  nav {
+    grid-area: nav;
+    background-color: #a4dbff;
+    color: white;
+    padding: 20px;
+    
+  }
+  
+  .banner {
+    grid-area: banner;
+    background-color: #ffcf86;
+    color: white;
+    padding: 20px;
+  }
+  
+  .card {
+    grid-area: card;
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card-item {
+    padding: 10px;
+    color: white;
+}
+
+.card-item:nth-child(1) {
+    background-color: #ff6f61; 
+}
+
+.card-item:nth-child(2) {
+    background-color: #ffc062; 
+}
+
+.card-item:nth-child(3) {
+    background-color: #4db6ac; 
+}
+
+
+  aside {
+    grid-area: aside;
+    background-color: #ff508a;
+    color: white;
+    padding: 20px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: #6ca0ff;
+    color: white;
+    padding: 20px;
+   
+  }
+  
